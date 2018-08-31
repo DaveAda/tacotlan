@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family:'cooperhewitt';
+	src:url('../fonts/cooper/CooperHewitt-Book.otf');
+}
+
+/*HEADER*/
+.header{
+	background-color: #000;
+	opacity: 0.8;
+	width: 100%;
+}
+
+.headercontainer{
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.links{
+	width: 80%;
+}
+.links ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 10px 0;
+}
+
+.links a{
+	color: white;
+	font-family: 'Rye';
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.socialmedia{
+	display: flex;
+	width: 20%;
+}
+.icons{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 50%;
+	height: 100%;
+}
+
+.icons i{
+	color: white;
+	padding: 5px 25px;
+}
+
+.fblogo, .messlogo, .iglogo{
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	transition: 0.5s;
+}
+.fblogo:hover{
+	background-color: #3b5998;
+	border-top: 2px solid #3b5998;
+	border-bottom: 1px solid #3b5998;
+	text-align: center;
+	transition: 0.3;
+	
+}
+.messlogo:hover{
+	color: #4267b2;
+	background-color: #e9ebee;
+	border-top: 2px solid #e9ebee;
+	border-bottom: 1px solid #e9ebee;
+}
+
+.iglogo:hover{
+	background-color: #c32aa3;
+	border-top: 2px solid #c32aa3;
+	border-bottom: 1px solid #c32aa3;
+}
