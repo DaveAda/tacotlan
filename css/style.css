@@ -9,75 +9,91 @@
 }
 
 /*HEADER*/
-.header{
-	background-color: #000;
-	opacity: 0.8;
-	width: 100%;
-}
+		.header{
+			background-color: #000;
+			opacity: 0.8;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+		}
 
-.headercontainer{
-	display: flex;
-	margin: 0 auto;
-	width: 90%;
-}
+		.headercontainer{
+			display: flex;
+			margin: 0 auto;
+			width: 90%;
+		}
 
-.links{
-	width: 80%;
-}
-.links ul{
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	padding: 10px 0;
-}
+		.links{
+			width: 80%;
+		}
+		.links ul{
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			padding: 10px 0;
+		}
 
-.links a{
-	color: white;
-	font-family: 'Rye';
-	font-size: 20px;
-	text-decoration: none;
-}
+		.links a{
+			color: white;
+			font-family: 'Rye';
+			font-size: 20px;
+			text-decoration: none;
+		}
 
-.socialmedia{
-	display: flex;
-	width: 20%;
-}
-.icons{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 50%;
-	height: 100%;
-}
+		.socialmedia{
+			display: flex;
+			width: 20%;
+		}
+		.icons{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 auto;
+			width: 50%;
+			height: 100%;
+		}
 
-.icons i{
-	color: white;
-	padding: 5px 25px;
-}
+		.icons i{
+			color: white;
+			padding: 5px 25px;
+		}
 
-.fblogo, .messlogo, .iglogo{
-	border-top: 2px solid #000;
-	border-bottom: 1px solid #000;
-	transition: 0.5s;
-}
-.fblogo:hover{
-	background-color: #3b5998;
-	border-top: 2px solid #3b5998;
-	border-bottom: 1px solid #3b5998;
-	text-align: center;
-	transition: 0.3;
-	
-}
-.messlogo:hover{
-	color: #4267b2;
-	background-color: #e9ebee;
-	border-top: 2px solid #e9ebee;
-	border-bottom: 1px solid #e9ebee;
-}
+		.fblogo, .messlogo, .iglogo{
+			border-top: 2px solid #000;
+			border-bottom: 1px solid #000;
+			transition: 0.5s;
+		}
+		.fblogo:hover{
+			background-color: #3b5998;
+			border-top: 2px solid #3b5998;
+			border-bottom: 1px solid #3b5998;
+			text-align: center;
+			transition: 0.3;
+			
+		}
+		.messlogo:hover{
+			color: #4267b2;
+			background-color: #e9ebee;
+			border-top: 2px solid #e9ebee;
+			border-bottom: 1px solid #e9ebee;
+		}
 
-.iglogo:hover{
-	background-color: #c32aa3;
-	border-top: 2px solid #c32aa3;
-	border-bottom: 1px solid #c32aa3;
-}
+		.iglogo:hover{
+			background-color: #c32aa3;
+			border-top: 2px solid #c32aa3;
+			border-bottom: 1px solid #c32aa3;
+		}
+/*JUMBOTRON*/
+/*BACKGROUND VIDEO*/
+		#mainVideo{
+			position: fixed;
+		}
+
+		.jumbotron{
+			height: 10%;
+		}
+		.logo{
+			position: fixed;
+			width: 50%;
+		}
+
