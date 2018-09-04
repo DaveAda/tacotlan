@@ -4,6 +4,8 @@
 	<title>Tacotlan</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
@@ -12,9 +14,10 @@
 		<div class="headercontainer">
 			<div class="links">
 				<ul>
+					<li id="yellowlogo"><a href="#"><img src="media/images/logos/headerlogoyellow.png"/><a/></li>
 					<li><a href="#">ABOUT US</a></li>
 					<li><a href="#">MENU</a></li>
-					<li><a href="#">CATERING & EVENTS</a></li>
+					<li><a href="#">CATERING</a></li>
 					<li><a href="#">DELIVERY</a></li>
 					<li><a href="#">CONTACT</a></li>
 				</ul>
@@ -29,36 +32,43 @@
 		</div>
 	</header>
 	<!--JUMBOTRON-->
+
 	<div class="jumbotron">
-		<video autoplay muted loop id="mainVideo">
-			<source src="media/video/particles.mp4" type="video/mp4">
-		</video>
-		<div class="jumbocontainer">
-			<img class="logo" src="media/images/logos/logo1.png"/>
-		</div>
+			<video autoplay muted loop id="mainVideo">
+				<source src="media/video/mexico.mp4" type="video/mp4">
+			</video>
+			<div class="jumboimage">
+				<img class="logo" src="media/images/logos/logo1.png"/>
+			</div>
 	</div>
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '406544566544296',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
+	<!--ABOUT US-->
+	<div class="aboutus">
+		<div class="aboutcontainer">
+			<div class="aboutusphoto">
+				<img class="wallart" src="media/images/scroll1.jpg"/>
+				<img class="wallart" src="media/images/scroll2.jpg"/>
+				<img class="wallart" src="media/images/scroll3.jpg"/>
+			</div>
+			<div class="aboutustext">
+				<h1>About Us</h1>
+				<p>Located in three of Chicagos most vibrant neighborhoods; The Loop, Old Town, & Lincoln Park.  Broken English combines a unique take on Mexican street style tacos, refreshing beverages, eclectic music, and vivid artwork created by local talent.  On the name, Garcia says, “I speak English with my friends, and I often find myself mixing in Spanish words because there are some phrases that simply don’t translate to English. This happens in many other languages and cultures, but that is what makes the name ‘Broken English’ fun – it is part of our daily slang.”</p>
+			</div>
+		</div>
+	</div>
+	<!--INSTAFEED-->
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/62f88c3331dc5ec78859e3d64474737c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
-<div class="fb-customerchat" page_id="843226992545000"></div>
+
+
+
+
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script src="js/instafeed.min.js"></script>
 <script src="js/main.js"></script>	
 </body>
 </html>

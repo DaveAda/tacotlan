@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+body{
+	width: 100%;
+	height: auto;
+}
+
 @font-face{
 	font-family:'cooperhewitt';
 	src:url('../fonts/cooper/CooperHewitt-Book.otf');
@@ -24,11 +29,12 @@
 		}
 
 		.links{
+			display: flex;
+			align-items: center;
 			width: 80%;
 		}
 		.links ul{
 			display: flex;
-			justify-content: space-between;
 			list-style: none;
 			padding: 10px 0;
 		}
@@ -38,6 +44,18 @@
 			font-family: 'Rye';
 			font-size: 20px;
 			text-decoration: none;
+		}
+
+		.links li{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+
+		#yellowlogo img{
+			width: 35%;
+			padding: 0;
 		}
 
 		.socialmedia{
@@ -55,7 +73,7 @@
 
 		.icons i{
 			color: white;
-			padding: 5px 25px;
+			padding: 20px 25px;
 		}
 
 		.fblogo, .messlogo, .iglogo{
@@ -85,15 +103,56 @@
 		}
 /*JUMBOTRON*/
 /*BACKGROUND VIDEO*/
+		.jumbotron{
+			margin-bottom: -4px;
+		}
 		#mainVideo{
-			position: fixed;
+			opacity: 0.7;
+			width: 100%;
 		}
 
-		.jumbotron{
-			height: 10%;
+		.jumboimage{
+			position: absolute;
+			text-align: center;
+			top: 225px;
+			width: 100%;
 		}
-		.logo{
-			position: fixed;
-			width: 50%;
+
+		.jumboimage img{
+			width: 45%;
+		}
+/*ABOUT US*/
+		.aboutus{
+			background-color: #0dc8d9;
+			background-image: url(http://www.transparenttextures.com/patterns/arabesque.png);
+		}
+		.aboutcontainer{
+			display: flex;
+			margin: 0 auto;
+			width: 80%;
+		}
+		.aboutusphoto{
+			width: 40%;
+			margin-bottom: -4px;
+		}
+
+		.aboutustext{
+			margin: 0 auto;
+			padding-top: 100px;
+			text-align: center;
+			width: 40%;
+		}
+
+		.aboutustext h1{
+			color: #fff;
+			font-family: 'Rye';
+			font-size: 72px;
+		}
+
+		.aboutustext p{
+			font-family: 'cooperhewitt';
+			font-size: 24px;
+			padding-top: 50px;
+			width: %;
 		}
 
