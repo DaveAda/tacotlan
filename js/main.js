@@ -8,9 +8,16 @@ $(document).ready(function () {
  });
 });
 
-var feed = new Instafeed({
-	get: "tagged",
-	tagName: "chicago",
-	clientId: "67011a8a795d429d9bad9262b997692e"	
+$(document).ready(function(){
+var userFeed = new Instafeed({
+	get: 'user',
+	userId: '1398104997',
+	limit: 4,
+	resolution: 'standard_resolution',
+	accessToken: '1398104997.1677ed0.7787f1510c6449b1b4e1913cfbdb036a',
+	sortBy: 'most-recent',
+	template: '<div class="gallery"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
 })
-feed.run();
+userFeed.run();
+});
+
