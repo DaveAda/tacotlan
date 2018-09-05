@@ -26,6 +26,7 @@ body{
 			display: flex;
 			margin: 0 auto;
 			width: 90%;
+			z-index: 10000;
 		}
 
 		.links{
@@ -123,7 +124,7 @@ body{
 		}
 /*ABOUT US*/
 		.aboutus{
-			background-color: #0dc8d9;
+			background-color: #a6941b;
 			background-image: url(http://www.transparenttextures.com/patterns/arabesque.png);
 		}
 		.aboutcontainer{
@@ -157,17 +158,39 @@ body{
 		}
 /*INSTAGRAM*/
 		.instaposition{
+			background-color: #3F1212;
+			background-image: url(http://www.transparenttextures.com/patterns/brick-wall-dark.png);
 			margin: 0 auto;
-			width: 80%;
+			width: 100%;
 		}
 
 		.instafeed{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
 		}
 
 		.instafeed img{
 			width: 95%;
+			padding: 40px 10px;
+		}
+/*FOOTER*/
+		.footer{
+			color: white;
+			background-color: black;
+			font-family: 'cooperhewitt';
+		}
+
+		.footercontainer{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+			padding: 40px 0;
+			width: 60%;
+		}
+
+		.footer img{
+			height: 8%;
+			width: 8%;
 		}
