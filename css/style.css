@@ -174,6 +174,10 @@ body{
 			width: 95%;
 			padding: 40px 10px;
 		}
+
+		.instafeed img:hover{
+			opacity: 0.2;
+		}
 /*FOOTER*/
 		.footer{
 			color: white;
@@ -188,6 +192,10 @@ body{
 			margin: 0 auto;
 			padding: 40px 0;
 			width: 60%;
+		}
+
+		.footer a{
+			color: white;
 		}
 
 		.footer img{
