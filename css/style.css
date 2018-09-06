@@ -12,7 +12,9 @@ body{
 	font-family:'cooperhewitt';
 	src:url('../fonts/cooper/CooperHewitt-Book.otf');
 }
-
+/**********HOMEPAGE**********/
+/**********HOMEPAGE**********/
+/**********HOMEPAGE**********/
 /*HEADER*/
 		.header{
 			background-color: #000;
@@ -37,13 +39,12 @@ body{
 		.links ul{
 			display: flex;
 			list-style: none;
-			padding: 10px 0;
 		}
 
 		.links a{
 			color: white;
 			font-family: 'Rye';
-			font-size: 20px;
+			font-size: 16px;
 			text-decoration: none;
 		}
 
@@ -55,8 +56,8 @@ body{
 		}
 
 		#yellowlogo img{
-			width: 35%;
-			padding: 0;
+			width: 40%;
+			
 		}
 
 		.socialmedia{
@@ -77,7 +78,7 @@ body{
 			padding: 20px 25px;
 		}
 
-		.fblogo, .messlogo, .iglogo{
+		.fblogo, .phonelogo, .iglogo{
 			border-top: 2px solid #000;
 			border-bottom: 1px solid #000;
 			transition: 0.5s;
@@ -90,11 +91,11 @@ body{
 			transition: 0.3;
 			
 		}
-		.messlogo:hover{
-			color: #4267b2;
-			background-color: #e9ebee;
-			border-top: 2px solid #e9ebee;
-			border-bottom: 1px solid #e9ebee;
+		.phonelogo:hover{
+			color: #fff;
+			background-color: #a6b1b7;
+			border-top: 2px solid #a6b1b7;
+			border-bottom: 1px solid #a6b1b7;
 		}
 
 		.iglogo:hover{
@@ -115,7 +116,7 @@ body{
 		.jumboimage{
 			position: absolute;
 			text-align: center;
-			top: 225px;
+			top: 125px;
 			width: 100%;
 		}
 
@@ -176,7 +177,7 @@ body{
 		}
 
 		.instafeed img:hover{
-			opacity: 0.2;
+			opacity: 0.4;
 		}
 /*FOOTER*/
 		.footer{
@@ -202,3 +203,58 @@ body{
 			height: 8%;
 			width: 8%;
 		}
+/**********CATERING**********/
+/**********CATERING**********/
+/**********CATERING**********/
+		.catering{
+			background-image: url("../media/images/carbackground.jpg");
+			background-size: cover;
+			background-position: 
+			background-repeat: no-repeat;
+			height: auto;
+			width: 100%;
+		}
+
+		.form{
+			display: flex;
+			font-family: 'cooperhewitt';
+			margin: 0 auto;
+			width: 80%;
+		}
+		.formcontainer{
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+			margin: 59px auto 0 auto;
+			padding: 20px 0 15px 0;
+			width: 100%;	
+		}
+		.formcontent, .formheading{
+			padding-left: 50px;
+			z-index: 100000;
+		}
+		.formcontent input{
+			font-family: 'cooperhewitt', arial;
+			font-size: 16px;
+			margin-bottom: 10px;
+			outline: none;
+			padding: 5px 0 0 10px;
+			width: 53%;
+		}
+		#textarea{
+			margin-bottom: 10px;
+			padding: 5px 0;
+			width: 54.5%;
+		}
+		#cateringsubmit{
+			background-color: #000;
+			color: white;
+			padding-right: 5px;
+			width: 10%;
+		}
+
+		#cateringsubmit:hover{
+			background-color: #a6941b; 
+			color: black;
+			cursor: pointer;
+		}
+

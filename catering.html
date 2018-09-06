@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tacotlan - Catering</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body class="catering">
+	<!--HEADER-->
+	<header class="header">
+		<div class="headercontainer">
+			<div class="links">
+				<ul>
+					<li id="yellowlogo"><a href="index.html"><img src="media/images/logos/headerlogoyellow.png"/><a/></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">MENU</a></li>
+					<li><a href="catering.html">CATERING</a></li>
+					<li><a href="#">DELIVERY</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="socialmedia">
+				<div class="icons">
+					<a href="https://www.facebook.com/tacotlantacos/" target="_blank"><i class="fab fa-facebook-f fblogo"></i></a>
+					<a href="https://www.instagram.com/tacotlantacos/?hl=en" target="_blank"><i class="fab fa-instagram iglogo"></i></a>
+					<a href="tel:773-666-5259"><i class="fas fa-phone phonelogo"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--CATERING INQUIRY-->
+	<div class="form">
+		<div class="formcontainer">
+			<div class="formheading">
+				<h1>TELL US ABOUT YOUR SPECIAL EVENT</h1>
+			</div>
+			<div class="formcontent">
+				<form action="/action_page.php" target="_blank" method="POST">
+					<p>First Name</p><input type="text" name="firstname">
+	  				<p>Last Name</p><input type="text" name="lastname">
+	  				<p>Company (if applicable)</p><input type="text" name="companyname">
+	  				<p>E-mail</p><input type="email" name="email">
+	  				<p>Phone</p><input type="tel" name="phone">
+	  				<p>Event Date & Time</p><input type="datetime-local" name="datetime">
+	  				<p>Estimated Guest Count</p><input type="number"/>
+	  				<p>Tell Us More About You<p><textarea name="message" id="textarea"></textarea><br>
+	  				<input id="cateringsubmit" type="submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
