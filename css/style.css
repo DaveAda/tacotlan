@@ -6,11 +6,17 @@
 body{
 	width: 100%;
 	height: auto;
+	overflow-x: hidden;
 }
 
 @font-face{
 	font-family:'cooperhewitt';
 	src:url('../fonts/cooper/CooperHewitt-Book.otf');
+}
+
+@font-face{
+	font-family:'cooperhewittbold';
+	src:url('../fonts/cooper/CooperHewitt-Bold.otf');
 }
 /**********HOMEPAGE**********/
 /**********HOMEPAGE**********/
@@ -55,6 +61,22 @@ body{
 			width: 100%;
 		}
 
+		.deliverytab{
+			color: #fff;
+			display: flex;
+			font-family: 'Rye';
+			padding: 0 40px;
+		}
+		.deliverydrop{
+			display: none;
+		}
+		.deliverytab:hover{
+			
+				color: yellow;
+				display: flex;
+				font-size: 40px;
+			
+		}
 		#yellowlogo img{
 			width: 40%;
 			
@@ -103,6 +125,13 @@ body{
 			border-top: 2px solid #c32aa3;
 			border-bottom: 1px solid #c32aa3;
 		}
+
+		#deliverytabs{
+			color: #fff;
+		}
+		#deliverytabs:hover{
+
+		}
 /*JUMBOTRON*/
 /*BACKGROUND VIDEO*/
 		.jumbotron{
@@ -131,31 +160,38 @@ body{
 		.aboutcontainer{
 			display: flex;
 			margin: 0 auto;
-			width: 80%;
-		}
-		.aboutusphoto{
-			width: 40%;
-			margin-bottom: -4px;
+			width: 100%;
 		}
 
 		.aboutustext{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
 			margin: 0 auto;
-			padding-top: 100px;
 			text-align: center;
-			width: 40%;
+			width: 50%;
 		}
 
 		.aboutustext h1{
 			color: #fff;
 			font-family: 'Rye';
-			font-size: 72px;
+			font-size: 52px;
+			padding-top: 20px;
 		}
 
 		.aboutustext p{
+			color: #fff;
 			font-family: 'cooperhewitt';
-			font-size: 24px;
-			padding-top: 50px;
-			width: %;
+			font-size: 16px;
+			padding: 20px 0;
+		}
+
+		.photocontainer{
+			align-items: center;
+			height: 100%;
+			max-width: 45%;
+			margin: 5px 0 0 5px;
 		}
 /*INSTAGRAM*/
 		.instaposition{
@@ -192,7 +228,7 @@ body{
 			align-items: center;
 			margin: 0 auto;
 			padding: 40px 0;
-			width: 60%;
+			width: 90%;
 		}
 
 		.footer a{
@@ -225,7 +261,7 @@ body{
 			background-color: rgba(0,0,0,0.5);
 			color: white;
 			margin: 59px auto 0 auto;
-			padding: 20px 0 15px 0;
+			padding: 20px 0 10px 0;
 			width: 100%;	
 		}
 		.formcontent, .formheading{
@@ -240,10 +276,15 @@ body{
 			padding: 5px 0 0 10px;
 			width: 53%;
 		}
+
+		.formcontent span{
+			color: red;
+		}
 		#textarea{
+			font-size: 16px;
 			margin-bottom: 10px;
-			padding: 5px 0;
-			width: 54.5%;
+			padding: 5px 0 0 10px;
+			width: 53.3%;
 		}
 		#cateringsubmit{
 			background-color: #000;
@@ -257,4 +298,170 @@ body{
 			color: black;
 			cursor: pointer;
 		}
+/**********MENU**********/
+/**********MENU**********/
+/**********MENU**********/
+		.menubody{
+			background-image: url("../media/images/peppersbackground.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: auto;
+			width: 100%;
+		}
 
+		.menu{
+			display: flex;
+			font-family: 'cooperhewitt';
+			margin: 0 auto;
+			width: 80%;	
+		}
+
+		.menucontainer{
+			background-color: rgba(216,96,61,0.9);
+			color: white;
+			margin: 59px auto 0 auto;
+			padding: 20px 0 10px 0;
+			width: 100%;	
+		}	
+		.menusection{
+			margin: 0 auto;
+			width: 90%;
+		}
+
+		.menusectionleft, .menusectionright{
+			width: 45%;
+		}
+		.menusection1{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.menusection h1{
+			font-family: 'Rye';
+		}
+		.menusection h3{
+			font-family: 'cooperhewittbold';
+		}
+		#topitem{
+			padding-top: 20px;
+		}
+
+		#bottomitem{
+			padding-bottom: 50px;
+		}
+		#dotted{
+			border-bottom: 8px dotted #fff;
+			padding-bottom: 10px;
+		}
+
+		#yourchoiceof{
+			padding-top: 20px;
+		}
+		.lalos{
+			background-color: rgba(255, 255, 255, 0.9);
+			padding: 10px;
+		}
+
+		.laloscontainer{
+			border: 5px dotted;
+			color: #D8603D;
+			margin: 0 auto;
+			padding: 10px;
+		}
+/**********CONTACT**********/
+/**********CONTACT**********/
+/**********CONTACT**********/
+		.contactbody{
+			background-image: url("../media/images/umbrellas.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: auto;
+			width: 100%;
+		}
+
+		.contact{
+			display: flex;
+			font-family: 'cooperhewitt';
+			margin: 0 auto;
+			width: 80%;	
+		}
+
+		.contactcontainer{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(86,168,143,0.9);
+			color: white;
+			margin: 59px auto 0 auto;
+			padding: 20px 0 51px 0;
+			width: 100%;	
+		}	
+
+		.contactlogo{
+			display: flex;
+			justify-content: center;
+		}
+		.contactlogo img{
+			height: 25%;
+			width: 25%;
+		}
+
+		.contactform{
+			display: flex;
+		}
+
+		.contactbody .formcontainer{
+			background-color: transparent;
+			padding: 0;
+		}
+
+		.contactbody .formcontainer .formheading{
+			display: flex;
+			justify-content: center;
+			padding: 0;
+		}
+
+		.contactbody .formcontainer .formcontent{
+			padding: 0;
+		}
+
+		.contactbody .formcontainer h1{
+			padding-bottom: 20px;
+		}
+
+		.contactcolumns{
+			display: flex;
+			justify-content: center;
+		}
+
+		.contactcolumns input{
+			width: 360px;
+		}
+
+		.contactright{
+			padding-left: 20px;
+		}
+
+		.contactmessage{
+			display: flex;
+			justify-content: center;
+		}
+		.contactbody #textarea{
+			padding: 10px 0 10px 10px;
+			width: 760px;
+		}
+
+		.contactbody #cateringsubmit{
+			background-color: #000;
+			color: white;
+			padding-right: 10px;
+			width: 10%;
+		}
+
+		#cateringsubmit:hover{
+			background-color: #a6941b; 
+			color: black;
+			cursor: pointer;
+		}

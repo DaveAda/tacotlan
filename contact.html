@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tacotlan - Catering</title>
+	<title>Tacotlan</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-<body class="catering">
+<body class="contactbody">
 	<!--HEADER-->
 	<header class="header">
 		<div class="headercontainer">
@@ -31,25 +31,41 @@
 			</div>
 		</div>
 	</header>
-	<!--CATERING INQUIRY-->
-	<div class="form">
+	<!--CONTACT FORM-->
+	<div class="contact">
+		<div class="contactcontainer">
+			<div class="contactlogo">
+				<img src="media/images/logos/blacklogo.png"/>
+			</div>
+			<div class="form">
 		<div class="formcontainer">
 			<div class="formheading">
-				<h1>TELL US ABOUT YOUR SPECIAL EVENT</h1>
+				<h1>WHAT'S ON YOUR MIND?</h1>
 			</div>
 			<div class="formcontent">
-				<form class="contact-form" action="contactform.php" target="_blank" method="POST">
-					<p>First Name <span>*</span></p><input type="text" name="firstname"/>
-	  				<p>Last Name <span>*</span></p><input type="text" name="lastname"/>
-	  				<p>Company (if applicable)</p><input type="text" name="companyname"/>
-	  				<p>E-mail <span>*</span></p><input type="email" name="email"/>
-	  				<p>Phone <span>*</span></p><input type="tel" name="phone"/>
-	  				<p>Event Date & Time <span>*</span></p><input type="datetime-local" name="datetime"/>
-	  				<p>Estimated Guest Count <span>*</span></p><input type="number" name="guestcount"/>
-	  				<p>Tell Us More About You <span>*</span><p><textarea name="message" id="textarea"></textarea><br>
-	  				<input id="cateringsubmit" type="submit" name="submit"/>
-				</form>
+				<div class="contactcolumns">
+					<div class="contactleft">
+						<form class="contact-form" action="contactform.php" target="_blank" method="POST">
+							<p>First Name <span>*</span></p><input type="text" name="firstname"/>
+			  				<p>Last Name <span>*</span></p><input type="text" name="lastname"/>
+		  				<form>
+					</div>
+					<div class="contactright">
+		  				<form class="contact-form" action="contactform.php" target="_blank" method="POST">
+			  				<p>E-mail <span>*</span></p><input type="email" name="email"/>
+			  				<p>Phone <span>*</span></p><input type="tel" name="phone"/>
+		  				</form>
+	  				</div>
+				</div>
+				<div class="contactmessage">
+	  				<form class="contact-form" action="contactform.php" target="_blank" method="POST">
+		  				<p>Message <span>*</span><p><textarea name="message" id="textarea"></textarea><br>
+		  				<input id="cateringsubmit" type="submit" name="submit"/>
+					</form>
+				</div>
 			</div>
+		</div>
+	</div>
 		</div>
 	</div>
 </body>
