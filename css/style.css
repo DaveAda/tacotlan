@@ -4,8 +4,6 @@
 }
 
 body{
-	width: 100%;
-	height: auto;
 	overflow-x: hidden;
 }
 
@@ -24,14 +22,15 @@ body{
 /*HEADER*/
 		.header{
 			background-color: #000;
+			height: 60px;
 			opacity: 0.8;
 			position: fixed;
-			width: 100%;
 			z-index: 1000;
 		}
 
 		.headercontainer{
 			display: flex;
+			height: 60px;
 			margin: 0 auto;
 			width: 90%;
 			z-index: 10000;
@@ -67,23 +66,52 @@ body{
 			font-family: 'Rye';
 			padding: 0 40px;
 		}
-		.deliverydrop{
+
+		.deliverycontainer{
 			display: none;
+			height: 450%;
+			position: absolute;
+			max-width: 20%;
 		}
-		.deliverytab:hover{
-			
-				color: yellow;
-				display: flex;
-				font-size: 40px;
-			
+		.deliverydrop{
+			padding-top: 20.3%;
 		}
+
+		.deliverydrop p{
+			background-color: blue;
+			padding: 5px 50px;
+		}
+
+		.deliverydrop img{
+			max-width: 70%;
+			padding: 10px 10px;
+		}
+
+		#droptop{
+			padding-top: 0;
+		}
+		.deliverydrop img:hover{
+			background-color: rgba(86,168,143,0.9);
+		}
+		.deliverytab:hover .deliverycontainer{
+			cursor: pointer;
+			display: block;
+		}
+
+		.menubody .deliverytab:hover .deliverydropmenu{
+			display: flex;
+			align-items: center;
+
+			width: 250%;
+		}
+
 		#yellowlogo img{
 			width: 40%;
-			
 		}
 
 		.socialmedia{
 			display: flex;
+			height: 60px;
 			width: 20%;
 		}
 		.icons{
@@ -102,13 +130,11 @@ body{
 
 		.fblogo, .phonelogo, .iglogo{
 			border-top: 2px solid #000;
-			border-bottom: 1px solid #000;
 			transition: 0.5s;
 		}
 		.fblogo:hover{
 			background-color: #3b5998;
 			border-top: 2px solid #3b5998;
-			border-bottom: 1px solid #3b5998;
 			text-align: center;
 			transition: 0.3;
 			
@@ -117,13 +143,11 @@ body{
 			color: #fff;
 			background-color: #a6b1b7;
 			border-top: 2px solid #a6b1b7;
-			border-bottom: 1px solid #a6b1b7;
 		}
 
 		.iglogo:hover{
 			background-color: #c32aa3;
 			border-top: 2px solid #c32aa3;
-			border-bottom: 1px solid #c32aa3;
 		}
 
 		#deliverytabs{
