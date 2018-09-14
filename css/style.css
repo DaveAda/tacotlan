@@ -20,11 +20,12 @@ body{
 /**********HOMEPAGE**********/
 /**********HOMEPAGE**********/
 /*HEADER*/
-		.header{
+		header{
 			background-color: #000;
 			height: 60px;
 			opacity: 0.8;
 			position: fixed;
+			width: 100%;
 			z-index: 1000;
 		}
 
@@ -58,51 +59,6 @@ body{
 			align-items: center;
 			justify-content: center;
 			width: 100%;
-		}
-
-		.deliverytab{
-			color: #fff;
-			display: flex;
-			font-family: 'Rye';
-			padding: 0 40px;
-		}
-
-		.deliverycontainer{
-			display: none;
-			height: 450%;
-			position: absolute;
-			max-width: 20%;
-		}
-		.deliverydrop{
-			padding-top: 20.3%;
-		}
-
-		.deliverydrop p{
-			background-color: blue;
-			padding: 5px 50px;
-		}
-
-		.deliverydrop img{
-			max-width: 70%;
-			padding: 10px 10px;
-		}
-
-		#droptop{
-			padding-top: 0;
-		}
-		.deliverydrop img:hover{
-			background-color: rgba(86,168,143,0.9);
-		}
-		.deliverytab:hover .deliverycontainer{
-			cursor: pointer;
-			display: block;
-		}
-
-		.menubody .deliverytab:hover .deliverydropmenu{
-			display: flex;
-			align-items: center;
-
-			width: 250%;
 		}
 
 		#yellowlogo img{
@@ -149,19 +105,12 @@ body{
 			background-color: #c32aa3;
 			border-top: 2px solid #c32aa3;
 		}
-
-		#deliverytabs{
-			color: #fff;
-		}
-		#deliverytabs:hover{
-
-		}
 /*JUMBOTRON*/
 /*BACKGROUND VIDEO*/
 		.jumbotron{
 			margin-bottom: -4px;
 		}
-		#mainVideo{
+		video{
 			opacity: 0.7;
 			width: 100%;
 		}
@@ -212,10 +161,8 @@ body{
 		}
 
 		.photocontainer{
-			align-items: center;
-			height: 100%;
 			max-width: 45%;
-			margin: 5px 0 0 5px;
+			margin: auto;
 		}
 /*INSTAGRAM*/
 		.instaposition{
@@ -489,3 +436,51 @@ body{
 			color: black;
 			cursor: pointer;
 		}
+
+/**********DELIVERY**********/
+/**********DELIVERY**********/
+/**********DELIVERY**********/
+
+/*DELIVERY HOVER*/
+		#deliverytab:hover + .vendormain{
+			display: block;
+		}
+		.vendormain{
+			display: none;
+		}
+		.vendorscontainer{
+			align-items: center;
+			background-color: rgba(86,168,143);
+			display: block;
+			margin: 59px auto 0 auto;
+			padding-top: 5px;
+			position: absolute;
+			z-index: 200000;	
+		}
+
+		.vendorslogos{
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+			padding-left: 50px;
+			width: 80%;
+		}
+
+		.vendorimages{
+			text-align: center;
+			width: 25%;
+		}
+
+		.vendorimages img{
+			width: 60%;
+		}
+
+	
+		#grubhub{
+			width:40%;
+		}
+
+
+
+
+
