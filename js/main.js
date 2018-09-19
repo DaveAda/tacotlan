@@ -21,3 +21,8 @@ var userFeed = new Instafeed({
 userFeed.run();
 });
 
+$(document).ready(function(){
+	$(".deliverytab").click(function(){
+		$(".vendormain").toggle();
+	});
+})

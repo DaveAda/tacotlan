@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tacotlan</title>
+	<title>Tacotlan - Menu</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -10,7 +10,7 @@
 </head>
 <body class="menubody">
 	<!--HEADER-->
-	<header class="header">
+	<header>
 		<div class="headercontainer">
 			<div class="links">
 				<ul>
@@ -19,7 +19,7 @@
 					<li><a href="menu.html">MENU</a></li>
 					<li><a href="catering.html">CATERING</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
-					<li><a href="delivery.html">DELIVERY</a></li>
+					<li class="deliverytab"><a href="#">DELIVERY</a></li>
 						
 				</ul>
 			</div>
@@ -32,6 +32,17 @@
 			</div>
 		</div>
 	</header>
+	<!--DELIVERY DROPDOWN-->
+	<div class="vendormain" id="vendormain">
+		<div class="vendorscontainer">
+			<div class="vendorslogos">
+				<a class="vendorimages" href="#"><img id="postmates" src="media/images/postmates.png"/></a>
+				<div class="vendorimages"><a href="#"><img id="grubhub" src="media/images/grubhub.png"/></a></div>
+				<a class="vendorimages" href="#"><img id="ubereats" src="media/images/ubereats.png"/></a>
+				<a class="vendorimages" href="#"><img id="doordash" src="media/images/doordash.png"/></a>
+			</div>
+		</div>
+	</div>
 	<!--MENU-->
 	<div class="menu">
 		<div class="menucontainer">
@@ -134,7 +145,7 @@
 							<div class="lalos">
 								<div class="laloscontainer">
 									<h3>LALO'S TACO</h3>
-									<p>Juicy, DELICIOUS pieces of PREMIUM outer skirt steak with your choice of toppings.  YOU.  WANT.  THIS.  $5.00</p>
+									<p>Juicy, DELICIOUS pieces of PREMIUM outer skirt steak with your choice of toppings.  <br>YOU.  WANT.  THIS.  $5.00</p>
 								</div>
 							</div>							
 						</div>
@@ -238,6 +249,9 @@
 		</div>
 	</div>
 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script src="js/main.js"></script>	
 </body>
 </html>
-

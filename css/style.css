@@ -143,14 +143,19 @@ body{
 			justify-content: center;
 			margin: 0 auto;
 			text-align: center;
-			width: 50%;
+			width: 60%;
 		}
 
 		.aboutustext h1{
 			color: #fff;
 			font-family: 'Rye';
 			font-size: 52px;
-			padding-top: 20px;
+			padding: 20px 0 10px 0;
+		}
+
+		.aboutus h2{
+			color: #fff;
+			font-family: 'cooperhewittbold';
 		}
 
 		.aboutustext p{
@@ -161,8 +166,12 @@ body{
 		}
 
 		.photocontainer{
-			max-width: 45%;
+			max-width: 25%;
 			margin: auto;
+		}
+
+		.wallart img{
+			background-color: transparent;
 		}
 /*INSTAGRAM*/
 		.instaposition{
@@ -213,7 +222,7 @@ body{
 /**********CATERING**********/
 /**********CATERING**********/
 /**********CATERING**********/
-		.catering{
+		.cateringbody{
 			background-image: url("../media/images/carbackground.jpg");
 			background-size: cover;
 			background-position: 
@@ -442,9 +451,7 @@ body{
 /**********DELIVERY**********/
 
 /*DELIVERY HOVER*/
-		#deliverytab:hover + .vendormain{
-			display: block;
-		}
+
 		.vendormain{
 			display: none;
 		}
