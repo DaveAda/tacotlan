@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 	$guestcount = $_POST['guestcount'];
 	$message = $_POST['message'];
 
-	$mailTo = "davealyinovich@gmail.com";
+	$mailTo = "dave@daveada.com";
 	$headers = "CATERING From: ".$mailFrom;
 	$txt = "You have received a catering order from ".$name.".\n\n".$message;
 
